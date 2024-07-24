@@ -11,7 +11,7 @@ The UI should display and work following these conditions:
 - Upon interaction with a UI Button, your system will downloads 3 news articles using an instance of `NewsClient`.
 - The Image, which you can stream using the packaged `TextureStreamer` static helper class.
 - The Contents, displayed using a TextMeshPro UI Text Element
-- Each article should be able to be clicked, where it will take the user to the source of the article.
+- Each article should be able to be clicked, where it will take the user to the source of the article in their browser.
 
 As a starting point, you should make use of the following scripts: `TextureStreamer.cs`, `NewsClient.cs`
 
