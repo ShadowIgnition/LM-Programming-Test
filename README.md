@@ -11,7 +11,7 @@ The UI should display and work following these conditions:
 - Upon interaction with a UI Button, your system will downloads 3 news articles using an instance of `NewsClient`.
 - The Image, which you can stream using the packaged `TextureStreamer` static helper class.
 - The Contents, displayed using a TextMeshPro UI Text Element
-- Each article should be able to be clicked, where it will take the user to the source of the article.
+- Each article should be able to be clicked, where it will take the user to the source of the article in their browser.
 
 As a starting point, you should make use of the following scripts: `TextureStreamer.cs`, `NewsClient.cs`
 
@@ -22,10 +22,12 @@ As a starting point, you should make use of the following scripts: `TextureStrea
 
 ## Bonus Points:
 - The package was imported using the package manager.
-- The solved solution was uploaded to git.
 - The solution has error handling.
 - The solution has code that is clear to read and understand.
 - The UI is flexible and fits different aspect ratios. (16:9, 16:10, 4:3, etc)
+
+## Delivery:
+- Your solution can either be uploaded to git, or sent to your reviewer in a `.zip` file.
 
 ## How to add to your Unity Project via Package Manager
 
