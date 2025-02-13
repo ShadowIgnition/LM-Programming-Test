@@ -22,10 +22,12 @@ As a starting point, you should make use of the following scripts: `TextureStrea
 
 ## Bonus Points:
 - The package was imported using the package manager.
-- The solved solution was uploaded to git.
 - The solution has error handling.
 - The solution has code that is clear to read and understand.
 - The UI is flexible and fits different aspect ratios. (16:9, 16:10, 4:3, etc)
+
+## Delivery:
+- Your solution can either be uploaded to git, or sent to your reviewer in a `.zip` file.
 
 ## How to add to your Unity Project via Package Manager
 
