@@ -2,7 +2,7 @@
 
 namespace InfinityHeroes.News.Steam
 {
-    public readonly struct SteamNewsRequest : INewsRequest
+    public readonly struct SteamNewsRequest
     {
         public int AppID { get; }
         public int? ArticleCount { get; }

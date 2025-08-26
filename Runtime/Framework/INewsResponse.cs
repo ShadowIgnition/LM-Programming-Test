@@ -1,8 +1,11 @@
-﻿namespace InfinityHeroes.News.Framework
+﻿using System.Collections;
+using System.Collections.Generic;
+
+namespace InfinityHeroes.News.Framework
 {
     public interface INewsResponse
     {
-        public INewsItem[] NewsItems { get; }
+        public INewsArticle[] NewsItems { get; }
 
     }
 }
