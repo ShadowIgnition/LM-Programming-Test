@@ -1,11 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-
-namespace InfinityHeroes.News.Framework
+﻿namespace InfinityHeroes.News.Framework
 {
-    public interface INewsResponse
-    {
-        public INewsArticle[] NewsItems { get; }
+	public interface INewsResponse
+	{
+		public INewsArticle[] Articles { get; }
 
-    }
+	}
 }

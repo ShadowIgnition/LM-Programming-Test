@@ -3,15 +3,15 @@ using System.Text;
 
 namespace InfinityHeroes.News.Steam
 {
-    public struct AppNews
+    public struct SteamAppNews
     {
-        [JsonConstructor]
-        public AppNews(SteamNewsArticle[] newsItems)
+		public SteamNewsArticle[] NewsItems { get; set; }
+
+		[JsonConstructor]
+        public SteamAppNews(SteamNewsArticle[] newsItems)
         {
             NewsItems = newsItems;
         }
-
-        public SteamNewsArticle[] NewsItems { get; set; }
 
         public override readonly string ToString()
         {

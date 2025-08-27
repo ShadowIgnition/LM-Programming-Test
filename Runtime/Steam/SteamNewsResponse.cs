@@ -6,23 +6,23 @@ namespace InfinityHeroes.News.Steam
 {
     public record SteamNewsResponse : INewsResponse
     {
-        public AppNews AppNews { get; }
-        public INewsArticle[] NewsItems { get; }
+        public SteamAppNews AppNews { get; }
+        public INewsArticle[] Articles { get; }
         public string ErrorMessage { get; }
         public bool IsError { get { return ErrorMessage != null; } }
 
         [JsonConstructor]
-        public SteamNewsResponse(AppNews appNews)
+        public SteamNewsResponse(SteamAppNews appNews)
         {
-            NewsItems = new INewsArticle[appNews.NewsItems.Length];
+            Articles = new INewsArticle[appNews.NewsItems.Length];
             AppNews = appNews;
-            Array.Copy(appNews.NewsItems, NewsItems, appNews.NewsItems.Length);
+            Array.Copy(appNews.NewsItems, Articles, appNews.NewsItems.Length);
             ErrorMessage = null;
         }
 
         public SteamNewsResponse(string errorMessage)
         {
-            NewsItems = Array.Empty<INewsArticle>();
+            Articles = Array.Empty<INewsArticle>();
             AppNews = new();
             ErrorMessage = errorMessage;
         }
