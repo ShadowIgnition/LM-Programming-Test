@@ -13,6 +13,8 @@ namespace InfinityHeroes.News.Framework
 		public string Contents { get; }
 		public IArticleSource Source { get; }
 
+		public const string BACKUP_IMAGE_URL = "https://clan.akamai.steamstatic.com/images/5622060/d2cacaaf1eabcf5e84348737e3f0ff60f2470315.png";
+
 		public Task<string> GetImageURLAsync();
 
 		public async Task<Texture2D> GetTextureAsync()
@@ -73,7 +75,5 @@ namespace InfinityHeroes.News.Framework
 				return null;
 			}
 		}
-
-		public const string BACKUP_IMAGE_URL = "https://clan.akamai.steamstatic.com/images/5622060/d2cacaaf1eabcf5e84348737e3f0ff60f2470315.png";
 	}
 }
